@@ -1,0 +1,119 @@
+.app {
+  font-family: sans-serif;  
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.dict-container{
+  background-color: #1F1F1F;
+  min-height: 100vh;
+  max-width: 100%;
+  color: white;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.navbar{
+  padding: 15px 40px;
+  background-color: #1F1F1F;
+  /* color: #87309f; */
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.audio-btn{
+  background-color: #c167da;
+  color: #561269;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.word-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+.pos{
+  font-family: serif;
+}
+.part-of-speech{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.part-of-speech hr{
+  width: 1000px;
+  height: .1px;
+  border: none;
+  background-color: grey;
+}
+li::marker{
+  color: #561269;
+}
+.meanings{
+  margin: 15px;
+}
+.meanings li{
+  margin: 10px;
+}
+.input-container{
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  width: 350px;
+  border-radius:10px;
+}
+.input-container input{
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 300px;
+}
+.input-container button{
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  background-color: #c167da;
+  color: white;
+  border-radius: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.synonyms-container{
+  display: flex;
+  color: #c167da;
+  gap: 10px;
+}
+@media (max-width:629px){
+  .dict-container{
+    padding: 30px;
+  }
+  .input-container{
+    width: 200px;
+  }
+  .input-container input{
+    width: 150px;
+  }
+  .word-container,
+  .definitions{
+    width: 250px;
+  }
+  .synonyms-container{
+    flex-wrap: wrap;
+  }
+}
